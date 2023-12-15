@@ -28,9 +28,9 @@ insert_data_task = BigQueryInsertJobOperator(
     configuration={
         'query': {
             'query': '''
-            INSERT INTO `my_dataset.my_table` (id, name, created_at)
-            VALUES (1, 'Sample Name', CURRENT_TIMESTAMP()),
-                   (2, 'Another Name', CURRENT_TIMESTAMP())
+            INSERT INTO `my_dataset_may.my_table` (id, name, created_at)
+            VALUES (1, 'May', CURRENT_TIMESTAMP()),
+                   (2, 'Oyin', CURRENT_TIMESTAMP())
             ''',
             'useLegacySql': False,
         }
